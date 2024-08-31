@@ -1,0 +1,30 @@
+### 로그인
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "user111",
+  "password": "user111"
+}
+
+### 내 정보 조회
+GET http://localhost:8080/api/users/me
+access: eyJhbGciOiJIUzI1NiJ9.eyJjYXRlZ29yeSI6ImFjY2VzcyIsInVzZXJuYW1lIjoidXNlcjExMSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE3MjUxMDI0MzcsImV4cCI6MTcyNTEwMzAzN30.bCQFSpGCnpydK2dyXdiAoQeVUUX3K6UEumbj8U_6duE
+Content-Type: application/json
+
+### 챌린지 등록
+POST http://localhost:8080/api/challenges/apply
+Content-Type: application/json
+access: eyJhbGciOiJIUzI1NiJ9.eyJjYXRlZ29yeSI6ImFjY2VzcyIsInVzZXJuYW1lIjoidXNlcjExMSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE3MjUxMjIyNTQsImV4cCI6MTcyNTEyMjg1NH0.-bi_ux4izGwZVChDJ8Ke7uQ6rFBe4Qh4hvf3pdnT8y0
+
+{
+  "challengeId": 3,
+  "challengeName": "화요일 1시간 공부하기",
+  "deposit": 15000,
+  "challengeSchedules": [
+    {
+      "applyDate": "2024-09-22",
+      "hours": 1
+    }
+  ]
+}
