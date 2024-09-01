@@ -46,7 +46,8 @@ http://studywork-partime-study-env.eba-y3nyc3gd.ap-northeast-2.elasticbeanstalk.
 #### **사용자 인증 (로그인)**- `LoginFilter.java`에 구현되었습니다.
 - 사용자는 `username`과 `password`를 사용하여 로그인할 수 있습니다.
 - 인증에 성공하면 JWT 토큰이 발급됩니다.
-- 인증 실패 시 적절한 오류 메시지가 반환됩니다.
+- 인증 실패 시 403 에러가 반환됩니다.
+- 이후 모든 API 에서는 헤더에 access 토큰을 추가해 사용자를 인증합니다.
 
 #### **챌린지 관리**- `ChallengeService.java`에 구현되었습니다.
 - 관리자는 챌린지를 생성할 수 있으며, 챌린지 이름, 보증금 한도, 상태 등을 정의할 수 있습니다.
