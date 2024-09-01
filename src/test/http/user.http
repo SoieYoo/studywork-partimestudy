@@ -28,3 +28,29 @@ access: eyJhbGciOiJIUzI1NiJ9.eyJjYXRlZ29yeSI6ImFjY2VzcyIsInVzZXJuYW1lIjoidXNlcjE
     }
   ]
 }
+
+### 로그인
+POST http://studywork-partime-study-env.eba-y3nyc3gd.ap-northeast-2.elasticbeanstalk.com/login
+Content-Type: application/json
+
+{
+  "username": "usertest111",
+  "password": "qwer12#$"
+}
+
+### 챌린지 등록
+POST http://studywork-partime-study-env.eba-y3nyc3gd.ap-northeast-2.elasticbeanstalk.com/api/challenges/apply
+Content-Type: application/json
+access: eyJhbGciOiJIUzI1NiJ9.eyJjYXRlZ29yeSI6ImFjY2VzcyIsInVzZXJuYW1lIjoidXNlcnRlc3QxMTEiLCJyb2xlIjoiUk9MRV9VU0VSIiwiaWF0IjoxNzI1MTgxMjA4LCJleHAiOjE3MjUxODE4MDh9.-95CoShEQzhyqTvqNvEXhZtPSYp6T9KOfFXAwrEuT2g
+
+{
+  "challengeId": 3,
+  "challengeName": "화요일 1시간 공부하기",
+  "deposit": 25000,
+  "challengeSchedules": [
+    {
+      "applyDate": "2024-09-22",
+      "hours": 1
+    }
+  ]
+}
