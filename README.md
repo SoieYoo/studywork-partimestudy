@@ -63,11 +63,12 @@ studywork-partimestudy/
 3. **애플리케이션 실행:** ./gradlew bootRun
 4. **Swagger UI 접근:**- 애플리케이션을 시작한 후, Swagger UI에 다음 주소로 접근할 수 있습니다:
   ```
-  http://localhost:8080/swagger-ui.html
+  http://localhost:8080/swagger-ui/index.html
+  http://studywork-partime-study-env.eba-y3nyc3gd.ap-northeast-2.elasticbeanstalk.com/swagger-ui/index.html
   ```
 ### **API 문서**
 API 문서는 Swagger UI 를 통해 제공됩니다.
-Swagger UI: http://localhost:8080/swagger-ui.html에서 이용할 수 있습니다.
+Swagger UI: http://localhost:8080/swagger-ui/index.html 혹은 http://studywork-partime-study-env.eba-y3nyc3gd.ap-northeast-2.elasticbeanstalk.com/swagger-ui/index.html 에서 이용할 수 있습니다.
 
 ### **오류 처리**
 커스텀 예외를 사용하여 USER_NOT_FOUND, ALREADY_EXIST_USERNAME, INVALID_DEPOSIT와 같은 다양한 오류 상황을 처리합니다.
