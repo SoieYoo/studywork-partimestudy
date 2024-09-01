@@ -30,6 +30,11 @@ studywork-partimestudy/
 ### ERD
 ![partimestudy (1)](https://github.com/user-attachments/assets/dafdf79a-5a40-4d51-a9e2-aa5aca347826)
 
+### 아키텍처
+![server drawio](https://github.com/user-attachments/assets/3330cd83-f86c-4e2d-811f-abbaaf638438)
+
+### 배포 주소
+http://studywork-partime-study-env.eba-y3nyc3gd.ap-northeast-2.elasticbeanstalk.com
 
 ### **구현 세부 사항**
 
